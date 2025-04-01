@@ -1,11 +1,13 @@
 using Spectre.Console;
-using remove TCSA.OOP.LibraryManagementSystem.Enums;
+using TCSA.OOP.LibraryManagementSystem.Enums;
 
 namespace TCSA.OOP.LibraryManagementSystem;
 
 internal class UserInterface
 {
-    internal  void MainMenu()
+
+    private BooksController booksController = new BooksController()
+    internal void MainMenu()
     {
         while (true)
         {
